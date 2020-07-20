@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task", "Task", "{EB00243D-3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{D4ECB001-01DC-49E7-A047-29D860C34C48}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "les02", "les02\les02.csproj", "{FBB5C0C9-BC33-4F31-81A8-AEB2A3270FC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,12 +23,17 @@ Global
 		{0AF11170-BD39-4FCC-9B86-F0A5E0CC2C16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AF11170-BD39-4FCC-9B86-F0A5E0CC2C16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AF11170-BD39-4FCC-9B86-F0A5E0CC2C16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBB5C0C9-BC33-4F31-81A8-AEB2A3270FC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBB5C0C9-BC33-4F31-81A8-AEB2A3270FC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBB5C0C9-BC33-4F31-81A8-AEB2A3270FC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBB5C0C9-BC33-4F31-81A8-AEB2A3270FC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0AF11170-BD39-4FCC-9B86-F0A5E0CC2C16} = {32BE81EE-B391-4667-8546-193EFC85D9B7}
+		{FBB5C0C9-BC33-4F31-81A8-AEB2A3270FC7} = {32BE81EE-B391-4667-8546-193EFC85D9B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6129A2C4-18AD-40AC-8791-F48B686C634F}
