@@ -9,6 +9,7 @@ namespace les06
         static void Main(string[] args)
         {
             Form form = new Form();
+            //MyForm form2 = new MyForm();
             form.Text = "Событие Paint";
 
             // У формы есть событие Paint,
@@ -17,7 +18,8 @@ namespace les06
             //Создаем делегат и указываем, что он указывает на метод MyPaintHandler
 
             form.Paint += new PaintEventHandler(MyPaintHandler);
-            Application.Run(form);
+            Application.Run(form);              //  Сначала отработает эта форма
+            Application.Run(new MyForm());      //  Потом включится эта форма.
         }
 
         private static void MyPaintHandler(object sender, PaintEventArgs e)
