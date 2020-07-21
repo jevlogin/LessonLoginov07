@@ -23,18 +23,29 @@ namespace WF_Udvoitel
         private void btnCommand1_Click(object sender, EventArgs e)
         {
             lblNumber.Text = (int.Parse(lblNumber.Text) + 1).ToString();
+            CountCoomandMethod();
+        }
+
+        private void CountCoomandMethod()
+        {
             lblCountCommand.Text = lblCountCommandDefault + (++CountCommand);
         }
 
         private void btnCommand2_Click(object sender, EventArgs e)
         {
             lblNumber.Text = (int.Parse(lblNumber.Text) * 2).ToString();
+            CountCoomandMethod();
         }
 
         private void btnReset_Click(object sender, EventArgs e)
         {
             lblNumber.Text = "1";
+            CountCoomandMethod();
         }
 
+        private void игратьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Вам необходимо получить число 69 за минимальное кол-во ходов.");
+        }
     }
 }
