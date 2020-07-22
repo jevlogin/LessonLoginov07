@@ -35,6 +35,7 @@
             this.lblAttempt = new System.Windows.Forms.Label();
             this.txtBoxInputUserNumber = new System.Windows.Forms.TextBox();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,14 +61,14 @@
             // btnMenuItem1NewGame
             // 
             this.btnMenuItem1NewGame.Name = "btnMenuItem1NewGame";
-            this.btnMenuItem1NewGame.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuItem1NewGame.Size = new System.Drawing.Size(136, 22);
             this.btnMenuItem1NewGame.Text = "Новая игра";
             this.btnMenuItem1NewGame.Click += new System.EventHandler(this.btnMenuItem1NewGame_Click);
             // 
             // btnMenuItem1Close
             // 
             this.btnMenuItem1Close.Name = "btnMenuItem1Close";
-            this.btnMenuItem1Close.Size = new System.Drawing.Size(180, 22);
+            this.btnMenuItem1Close.Size = new System.Drawing.Size(136, 22);
             this.btnMenuItem1Close.Text = "Выход";
             this.btnMenuItem1Close.Click += new System.EventHandler(this.btnMenuItem1Close_Click);
             // 
@@ -98,11 +99,22 @@
             this.lblInfo.TabIndex = 3;
             this.lblInfo.Text = "Введите число";
             // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(313, 177);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 4;
+            this.btnOk.Text = "Ответить";
+            this.btnOk.UseVisualStyleBackColor = true;
+            this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 357);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.txtBoxInputUserNumber);
             this.Controls.Add(this.lblAttempt);
@@ -126,6 +138,7 @@
         private System.Windows.Forms.Label lblAttempt;
         private System.Windows.Forms.TextBox txtBoxInputUserNumber;
         private System.Windows.Forms.Label lblInfo;
+        private System.Windows.Forms.Button btnOk;
     }
 }
 
