@@ -17,6 +17,8 @@ namespace GuessTheNumber
         public int CurrentValue;
         public int CurrentAttemp = 0;
         public const string tempAttemp = "Попытка № ";
+        public const string gameOver = "Игра окончена!\n\nДля начала новой игры, выберите в меню \"Новая игра\"";
+        public const string tempLblInfo = "Введите число";
 
         public Form1()
         {
@@ -38,19 +40,25 @@ namespace GuessTheNumber
         {
             CurrentValue = rnd.Next(1, 101);
             Debug.WriteLine(CurrentValue);  //TODO НЕ ЗАБЫТЬ УБРАТЬ!
-
-            CurrentAttemp = 1;
-            lblAttempt.Text = tempAttemp + CurrentAttemp;
             MessageBox.Show("Добро пожаловать в игру!\n\nПравила простые: УГАДАЙ ЧИСЛО, которое загадал компьютер.");
+            CurrentAttemp = 1;
+            btnOk.Show();
+            txtBoxInputUserNumber.Show();
+            lblInfo.Text = tempLblInfo;
+            lblAttempt.Text = tempAttemp + CurrentAttemp;
         }
 
 
         private void btnOk_Click(object sender, EventArgs e)
         {
             int tempUserAnswer = int.Parse(txtBoxInputUserNumber.Text);
+            txtBoxInputUserNumber.Clear();
             if (tempUserAnswer.Equals(CurrentValue))
             {
                 MessageBox.Show($"Поздравляю! Вы победили! Вы сделали это всего с {CurrentAttemp} попыток.");
+                btnOk.Hide();
+                txtBoxInputUserNumber.Hide();
+                lblInfo.Text = gameOver;
             }
             else
             {
