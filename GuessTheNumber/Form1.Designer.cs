@@ -32,6 +32,9 @@
             this.btnMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMenuItem1NewGame = new System.Windows.Forms.ToolStripMenuItem();
             this.btnMenuItem1Close = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblAttempt = new System.Windows.Forms.Label();
+            this.txtBoxInputUserNumber = new System.Windows.Forms.TextBox();
+            this.lblInfo = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,11 +71,41 @@
             this.btnMenuItem1Close.Text = "Выход";
             this.btnMenuItem1Close.Click += new System.EventHandler(this.btnMenuItem1Close_Click);
             // 
+            // lblAttempt
+            // 
+            this.lblAttempt.AutoSize = true;
+            this.lblAttempt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAttempt.Location = new System.Drawing.Point(309, 65);
+            this.lblAttempt.Name = "lblAttempt";
+            this.lblAttempt.Size = new System.Drawing.Size(95, 20);
+            this.lblAttempt.TabIndex = 1;
+            this.lblAttempt.Text = "Попытка №";
+            // 
+            // txtBoxInputUserNumber
+            // 
+            this.txtBoxInputUserNumber.Location = new System.Drawing.Point(182, 177);
+            this.txtBoxInputUserNumber.Name = "txtBoxInputUserNumber";
+            this.txtBoxInputUserNumber.Size = new System.Drawing.Size(100, 20);
+            this.txtBoxInputUserNumber.TabIndex = 2;
+            // 
+            // lblInfo
+            // 
+            this.lblInfo.AutoSize = true;
+            this.lblInfo.Font = new System.Drawing.Font("Ink Free", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInfo.Location = new System.Drawing.Point(182, 136);
+            this.lblInfo.Name = "lblInfo";
+            this.lblInfo.Size = new System.Drawing.Size(107, 16);
+            this.lblInfo.TabIndex = 3;
+            this.lblInfo.Text = "Введите число";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(515, 357);
+            this.Controls.Add(this.lblInfo);
+            this.Controls.Add(this.txtBoxInputUserNumber);
+            this.Controls.Add(this.lblAttempt);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
@@ -90,6 +123,9 @@
         private System.Windows.Forms.ToolStripMenuItem btnMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem btnMenuItem1NewGame;
         private System.Windows.Forms.ToolStripMenuItem btnMenuItem1Close;
+        private System.Windows.Forms.Label lblAttempt;
+        private System.Windows.Forms.TextBox txtBoxInputUserNumber;
+        private System.Windows.Forms.Label lblInfo;
     }
 }
 
